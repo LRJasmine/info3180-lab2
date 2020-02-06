@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+
+{% block main %}
+
+<div>
+    <div id="profilepic">
+        <img src="{{ url_for('static', filename='blackgirlwithglasses.jpg') }}">
+    </div>
+    <div id="identification">
+        <h1>Latoya Rhoden</h1>
+        <h3>@lrjasmine</h3>
+        <h3>Kingston,Jamaica</h3>
+        <h3>Joined February, 2020</h3>
+    </div>
+</div>
+
+<div>
+    <div id="aboutme">
+        <p>
+            I am a smart and talented young woman who loves web design and development.
+            Contact me if you would like us to woerk together on a new project.
+        </p>
+    </div>
+    <div id="social">
+        <div>
+            <p>7</p>
+            <p>Post</p>
+        </div>
+        <div>
+            <p>195</p>
+            <p>Following</p>
+        </div>
+        <div>
+            <p>374</p>
+            <p>Followers</p>
+        </div>
+    </div>
+    <div id="followbtn">
+        <button class="follow">Follow</button>
+    </div>
+
+</div>
+
+{% endblock %}
