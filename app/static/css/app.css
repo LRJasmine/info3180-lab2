@@ -8,39 +8,76 @@ body {
     height: 150px;
 }
 
-#profilepic {
+.profilepic {
     text-align: center;
 }
 
-#identification{
+.identification{
     text-align: center;
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.identification h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#profilecontainer{
-    background-color: darkorange;
+.profilecontainer{
+    background-color: rgb(153, 0, 0);
     padding-top: 30px;
     padding-bottom: 10px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-#aboutme {
+.aboutme {
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(200,200,200);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: bolder;
+    color: rgb(144,144,144);
 }
 
-#social {
+.socialcontainer {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    border: gray solid 1px;
+    border-top: none;
+}
+
+.social {
     display: flex;
     flex-direction: row;
-}
-
-p .socialname {
-    color: rgb(72,72,72);
-}
-
-#followbtn button{
     justify-content: center;
+}
+
+.social > div {
+    margin: 5px 15px;
+    text-align: center;
+}
+
+
+.socialnum {
+    color: rgb(72,72,72);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0px;
+}
+
+.socialname {
+    color: rgb(200,200,200);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.followbtn {
+    text-align: center;
+}
+
+.followbtn > button {
+    background-color: rgb(21, 179, 21);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 55px;
+    border: none;
+    border-radius: 10px;
 }
