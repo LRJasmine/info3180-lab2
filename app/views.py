@@ -30,7 +30,8 @@ def about():
 @app.route('/profile')
 def profile():
     """Render the website's profile page"""
-    joineddate = format_date_joined()
+    date_joined = datetime.date(2020, 2, 7) # a specific date 
+    joineddate = format_date_joined(date_joined)
     return render_template('profile.html', date=joineddate)
 
 ###
@@ -62,10 +63,9 @@ def page_not_found(error):
     return render_template('404.html'), 404
 
 
-date_joined = datetime.date(2020, 2, 7) # a specific date 
 def format_date_joined(date_joined):
     ## Format the date to return only month and year date
-    print "Joined " + date_joined.strftime("%B, %Y") 
+    return "Joined " + date_joined.strftime("%B, %Y") 
 
 
 if __name__ == '__main__':
